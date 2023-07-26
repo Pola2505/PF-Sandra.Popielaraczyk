@@ -10,7 +10,7 @@ const contenedorCarritoVacio = document.querySelector("#carrito-vacio");
 let botonesEliminar = document.querySelectorAll(".carrito-producto-eliminar");
 const botonVaciar = document.querySelector("#carrito-acciones-vaciar");
 const contenedorCarritoAcciones = document.querySelector("#carrito-acciones");
-const contenedorCarritoComprado = document.querySelector("#carrito-comprado");
+
 const contenedorTotal = document.querySelectorAll("#total");
 
 
@@ -23,7 +23,7 @@ function cargarProductosCarrito() {
         contenedorCarritoVacio.classList.add("inactive");
         contenedorCarritoProductos.classList.remove("inactive");
         contenedorCarritoAcciones.classList.remove("inactive");
-        contenedorCarritoComprado.classList.add("inactive");
+        
 
         contenedorCarritoProductos.innerHTML = "";
 
@@ -57,7 +57,7 @@ function cargarProductosCarrito() {
     contenedorCarritoVacio.classList.remove("inactive");
     contenedorCarritoProductos.classList.add("inactive");
     contenedorCarritoAcciones.classList.add("inactive");
-    contenedorCarritoComprado.classList.add("inactive");
+    
 }
 
     actualizarBotonesEliminar();
