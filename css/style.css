@@ -198,7 +198,7 @@ p{
     padding: 10px;
     margin: 10px;
 }
-.disabled{
+.inactive{
     display:none;
 }
 .btn{
