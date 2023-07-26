@@ -132,8 +132,7 @@ p{
 
 }
 
-.carrito-vacio,
-.carrito-comprado{
+.carrito-vacio {
     color: var(--quaternary-color);
     padding:20px;
     margin:10px;
