@@ -20,10 +20,10 @@ const contenedorTotal = document.querySelectorAll("#total");
 
 function cargarProductosCarrito() {
     if (productosEnCarrito && productosEnCarrito.length > 0) {
-        contenedorCarritoVacio.classList.add("disabled");
-        contenedorCarritoProductos.classList.remove("disabled");
-        contenedorCarritoAcciones.classList.remove("disabled");
-        contenedorCarritoComprado.classList.add("disabled");
+        contenedorCarritoVacio.classList.add("inactive");
+        contenedorCarritoProductos.classList.remove("inactive");
+        contenedorCarritoAcciones.classList.remove("inactive");
+        contenedorCarritoComprado.classList.add("inactive");
 
         contenedorCarritoProductos.innerHTML = "";
 
@@ -54,10 +54,10 @@ function cargarProductosCarrito() {
             contenedorCarritoProductos.append(div);
         })
 } else {
-    contenedorCarritoVacio.classList.remove("disabled");
-    contenedorCarritoProductos.classList.add("disabled");
-    contenedorCarritoAcciones.classList.add("disabled");
-    contenedorCarritoComprado.classList.add("disabled");
+    contenedorCarritoVacio.classList.remove("inactive");
+    contenedorCarritoProductos.classList.add("inactive");
+    contenedorCarritoAcciones.classList.add("inactive");
+    contenedorCarritoComprado.classList.add("inactive");
 }
 
     actualizarBotonesEliminar();
