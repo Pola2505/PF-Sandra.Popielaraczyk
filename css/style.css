@@ -265,3 +265,10 @@ p{
     font-family: 'Raleway', sans-serif;
     color: var(--main-color);
   }
+  .dropdown-menu{
+    background-color: var(--secondary-color);
+  }
+  #dropdown:hover{
+    background-color: var(--main-color) !important;
+    border-radius: 5px !important;
+  }
