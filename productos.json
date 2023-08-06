@@ -1,0 +1,82 @@
+[
+    {
+        "id": "nutri-veggie-1",
+        "titulo": "Nutri Agustina",
+        "imagen": "...",
+        "categoria": {
+            "nombre": "Veggie/Vegan",
+            "id": "veggie-vegan"
+        },
+        "precio": 3000
+    },
+    {
+        "id": "nutri-vegan-2",
+        "titulo": "Nutri Olivia",
+        "imagen": "...",
+        "categoria": {
+            "nombre": "Veggie/Vegan",
+            "id": "veggie-vegan"
+        },
+        "precio": 3000
+    },
+    {
+        "id": "nutri-baja-1",
+        "titulo": "Nutri Alejando",
+        "imagen": "...",
+        "categoria": {
+            "nombre": "Bajar de Peso",
+            "id": "bajar"
+        },
+        "precio": 3000
+    },
+    {
+        "id": "nutri-baja-2",
+        "titulo": "Nutri Monica",
+        "imagen": "...",
+        "categoria": {
+            "nombre": "Bajar de Peso",
+            "id": "bajar"
+        },
+        "precio": 
+    },
+    {
+        "id": "nutri-aumento-1",
+        "titulo": "Nutri Federico",
+        "imagen": "...",
+        "categoria": {
+            "nombre": "Aumento de Peso",
+            "id": "aumento"
+        },
+        "precio": 3000
+    },
+    {
+        "id": "nutri-aumento-2",
+        "titulo": "Nutri Vanessa",
+        "imagen": "...",
+        "categoria": {
+            "nombre": "Aumento de Peso",
+            "id": "aumento"
+        },
+        "precio": 3000
+    },
+    {
+        "id": "nutri-especial-1",
+        "titulo": "Nutri Antonella",
+        "imagen": "...",
+        "categoria": {
+            "nombre": "Dietas especiales",
+            "id": "especiales"
+        },
+        "precio": 3000
+    },
+    {
+        "id": "nutri-especial-2",
+        "titulo": "Nutri Arianna",
+        "imagen": "...",
+        "categoria": {
+            "nombre": "Dietas especiales",
+            "id": "especiales"
+        },
+        "precio": 3000
+    }
+]

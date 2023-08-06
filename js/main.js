@@ -1,5 +1,3 @@
-//  E-books y dietas en venta - array de objetos
-
 let productos = [
     { 
         id: "ebook-1",
@@ -96,7 +94,6 @@ const contenedorProductos = document.querySelector("#contenedor-productos");
 let botonesAgregar = document.querySelectorAll(".producto-agregar");
 const numero = document.querySelector('#numero');
 
-
 /********************************************************************************************************************************/
 
 // Si hacemos click al boton de agregar lo agrega al carrito
@@ -149,15 +146,14 @@ cargarProductos();
 
 
 let productosEnCarrito;
-const productosEnCarritoLS = localStorage.getItem("productos-en-carrito");
 
-// Si hay cosas en el carrito hace el update del numero del carrito 
+let productosEnCarritoLS = localStorage.getItem("productos-en-carrito");
 
-if(productosEnCarritoLS) {
+if (productosEnCarritoLS) {
     productosEnCarrito = JSON.parse(productosEnCarritoLS);
-    updateNumber();
+    actualizarNumerito();
 } else {
-    productosEnCarrito = []; 
+    productosEnCarrito = [];
 }
 
 /********************************************************************************************************************************/
