@@ -43,19 +43,13 @@
                 Nutricionistas personalizados
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="nutri-veggie-vegano.html">Dieta veggie/vegana</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="nutri-bajar-de-peso.html">Bajar de peso</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="nutri-aumentar-de-peso.html">Aumentar de peso</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="nutri-especial.html">Dietas especiales</a></li>
+                <li><a id="dropdown" class="dropdown-item" href="nutri-veggie-vegano.html">Dieta veggie/vegana</a></li>
+
+                <li><a id="dropdown" class="dropdown-item" href="nutri-bajar-de-peso.html">Bajar de peso</a></li>
+
+                <li><a id="dropdown" class="dropdown-item" href="nutri-aumentar-de-peso.html">Aumentar de peso</a></li>
+
+                <li><a id="dropdown" class="dropdown-item" href="nutri-especial.html">Dietas especiales</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -64,15 +58,11 @@
                 Recetas
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="desayunos.html">Desayunos</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="almuerzos-cenas.html">Almuerzos y Cenas</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="postres.html">Postres</a></li>
+                <li><a id="dropdown" class="dropdown-item" href="desayunos.html">Desayunos</a></li>
+
+                <li><a id="dropdown" class="dropdown-item" href="almuerzos-cenas.html">Almuerzos y Cenas</a></li>
+
+                <li><a id="dropdown" class="dropdown-item" href="postres.html">Postres</a></li>
               </ul>
             </li>
             <li class="nav-item">
@@ -83,29 +73,33 @@
 
           <ul class="d-flex">
             <li class="nav-item">
-              <a class="nav-link" href="carrito.html"><i class="bi bi-cart-fill"></i>Carrito</a>
+              <a class="nav-link" href="carrito.html"><i class="bi bi-cart-fill"></i>Carrito <span id="numero" class="numero">0</span></a>
             </li>
           </ul>
 
         </div>
       </div>
     </nav>
+
     <!--Header, logo, title-->
 
-    <header class="header-container">
-      <img class="img-fluid" src="img/header.jpg" alt="NutritionHeader">
-    </header>
-
+    <div class="header finisher-header">
+      <h2 class="main-header">Conoce nuestra oferta - recetas ricas, saludable y dietas con nutricionistas personales!
+      </h2>
+    </div>
     <main>
-
+   
     </main>
+  
+  <!--Footer, iconos, contactos, mail-->
+</div>
+  <footer class="sticky-footer">
+    <p class="footer-texto">©Todos los derechos reservados 2023</p>
+  </footer>
 
-    <!--Footer, iconos, contactos, mail-->
-
-    <footer>
-      <p class="footer-texto">©Todos los derechos reservados 2023</p>
-    </footer>
-  </div>
+  <script src="finisher-header.es5.min.js" type="text/javascript"></script>
+  <script src="js/carrito.js" ></script> 
+  <script src="js/main.js" ></script>
 </body>
 
 </html>
