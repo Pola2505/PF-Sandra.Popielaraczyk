@@ -140,7 +140,7 @@ function cargarProductos() {
     actualizarBotonesAgregar();
     
 }
-cargarProductos();
+if(contenedorProductos)cargarProductos();
 
 /********************************************************************************************************************************/
 
