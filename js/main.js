@@ -1,7 +1,7 @@
 //  E-books y dietas en venta - array de objetos
 
 let productos = [
-    {
+    { 
         id: "ebook-1",
         titulo: "Ebook 1",
         imagen: "./img/template-ebook.png",
@@ -94,8 +94,7 @@ let productos = [
 
 const contenedorProductos = document.querySelector("#contenedor-productos");
 let botonesAgregar = document.querySelectorAll(".producto-agregar");
-const numero = document.querySelector("#numero");
-const numero1 = document.querySelector("#numero1");
+const numero = document.querySelector('#numero');
 
 
 /********************************************************************************************************************************/
