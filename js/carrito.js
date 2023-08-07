@@ -80,6 +80,26 @@ cargarProductosCarrito()
 
 
 function eliminarDelCarrito(e) {
+    
+    Toastify({
+        text: "Se elimino un producto",
+        duration: 4000,
+        destination: "https://github.com/apvarun/toastify-js",
+        newWindow: true,
+        close: true,
+        gravity: "top", 
+        position: "right", 
+        stopOnFocus: true,
+        offset: {
+            x: 30, 
+            y: 40 
+          }, 
+        style: {
+          background: "linear-gradient(to right, rgb(183, 196, 207), rgb(150, 126, 118)",
+        },
+        onClick: function(){} 
+      }).showToast();
+
     let idBoton = e.currentTarget.id;
     const index = productosEnCarrito.findIndex(producto => producto.id === idBoton);
     productosEnCarrito.splice(index, 1);
