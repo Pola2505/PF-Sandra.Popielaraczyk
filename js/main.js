@@ -90,7 +90,7 @@ let productos = [
 
 // Buscamos los elementos del HTML y los asignamos a las variables para poder a utilizarlos
 
-const contenedorProductos = document.querySelector("#contenedor-productos");
+const containerProducts = document.querySelector("#container-our-products");
 let botonesAgregar = document.querySelectorAll(".producto-agregar");
 const numero = document.querySelector('#numero');
 
@@ -133,14 +133,14 @@ function cargarProductos() {
                 <button class="producto-agregar" id="${producto.id}">Agregar</button>
             </div>
     `;
-        contenedorProductos.append(div);
+        containerProducts.append(div);
         
     })
 
     actualizarBotonesAgregar();
     
 }
-if(contenedorProductos)cargarProductos();
+if(containerProducts)cargarProductos();
 
 /********************************************************************************************************************************/
 
