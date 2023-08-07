@@ -282,3 +282,22 @@ p{
   .newsletter{
     padding: 20px;
   }
+  #swal2-title{
+    color: var(--tertiary-color) !important;
+  }
+  .swal2-confirm, .swal2-cancel{
+    background-color: var(--secondary-color) !important;
+    color: var(--quaternary-color) !important;
+  }
+  .swal2-question{
+    border-color: var(--secondary-color) !important;
+    color: var(--quaternary-color) !important;
+  }
+  .swal2-popup{
+    border-radius: 20px !important;
+  }
+  #parrafo-sweetalert{
+    color: var(--quaternary-color);
+    padding:20px;
+    margin:10px;
+  }
