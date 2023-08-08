@@ -20,6 +20,10 @@ body{
 .header{
     width: 100%; 
     height: 350px;
+  
+}
+#header-container{
+    height: 200px;
 }
 .main-header{
     color: var(--quaternary-color);
