@@ -1,87 +1,87 @@
 let productos = [
-    { 
+    {
         id: "ebook-1",
         titulo: "Ebook 1",
         imagen: "./img/template-ebook.png",
         precio: 2000,
-        
+
     },
     {
         id: "ebook-2",
         titulo: "Ebook 2",
         imagen: "./img/template-ebook.png",
         precio: 2000,
-        
+
     },
     {
         id: "ebook-3",
         titulo: "Ebook 3",
         imagen: "./img/template-ebook.png",
         precio: 3000,
-        
+
     },
     {
         id: "ebook-4",
         titulo: "Ebook 4",
         imagen: "./img/template-ebook.png",
         precio: 2000,
-        
+
     },
     {
         id: "ebook-5",
         titulo: "Ebook 5",
         imagen: "./img/template-ebook.png",
         precio: 2000,
-        
+
     },
     {
         id: "ebook-6",
         titulo: "Ebook 6",
         imagen: "./img/template-ebook.png",
         precio: 3000,
-        
+
     },
     {
         id: "dieta-primavera",
         titulo: "Dieta Primavera",
         imagen: "./img/template-ebook.png",
         precio: 2500,
-        
+
     },
     {
         id: "dieta-invierno",
         titulo: "Dieta Invierno",
         imagen: "./img/template-ebook.png",
         precio: 3000,
-        
+
     },
     {
         id: "dieta-verano",
         titulo: "Dieta Verano",
         imagen: "./img/template-ebook.png",
         precio: 2500,
-        
+
     },
     {
         id: "dieta-veggie",
         titulo: "Dieta Veggie",
         imagen: "./img/template-ebook.png",
         precio: 2500,
-        
+
     },
     {
         id: "dieta-vegana",
         titulo: "Dieta Vegana",
         imagen: "./img/template-ebook.png",
         precio: 3000,
-        
+
     },
     {
         id: "dieta-otono",
         titulo: "Dieta Otono",
         imagen: "./img/template-ebook.png",
         precio: 2500,
-        
+
     },
 
 ]
@@ -134,13 +134,13 @@ function cargarProductos() {
             </div>
     `;
         containerProducts.append(div);
-        
+
     })
 
     actualizarBotonesAgregar();
-    
+
 }
-if(containerProducts)cargarProductos();
+if (containerProducts) cargarProductos();
 
 /********************************************************************************************************************************/
 
@@ -168,23 +168,23 @@ function agregarAlCarrito(e) {
         destination: "https://github.com/apvarun/toastify-js",
         newWindow: true,
         close: true,
-        gravity: "top", 
-        position: "right", 
+        gravity: "top",
+        position: "right",
         stopOnFocus: true,
         offset: {
-            x: 30, 
-            y: 40 
-          }, 
-        style: {
-          background: "linear-gradient(to right, rgb(183, 196, 207), rgb(150, 126, 118)",
+            x: 30,
+            y: 40
         },
-        onClick: function(){} 
-      }).showToast();
+        style: {
+            background: "linear-gradient(to right, rgb(183, 196, 207), rgb(150, 126, 118)",
+        },
+        onClick: function () { }
+    }).showToast();
 
     const idBoton = e.currentTarget.id;
     const productoAgregado = productos.find(producto => producto.id === idBoton);
 
-    if(productosEnCarrito.some(producto => producto.id === idBoton)) {
+    if (productosEnCarrito.some(producto => producto.id === idBoton)) {
         const index = productosEnCarrito.findIndex(producto => producto.id === idBoton);
         productosEnCarrito[index].cantidad++;
     } else {
@@ -197,9 +197,12 @@ function agregarAlCarrito(e) {
     localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
 }
 
+/* El cliente entra a la pagina, ve el titulo principal y despues el titulo cambia al de subscribir y despues vuelve al titulo inicial y asi repitiendose fue mas que nada mi primera prueba de como puedo utilizar setimeout y setinterval */
 
-setTimeout(() => { document.title = "-> Subscribite a nuestro newsletter y conoce todas las ofertas!"; }, 3000);
-setTimeout(() => { document.title = '♥ La vida saludable, recetas que enamoran y dietas personalizadas! ♥'; }, 7000);
+setInterval(() => {
+    setTimeout(() => { document.title = "-> Subscribite a nuestro newsletter y conoce todas las ofertas!"; }, 2000);
+    setTimeout(() => { document.title = '♥ La vida saludable, recetas que enamoran y dietas personalizadas! ♥'; }, 4000);
+}, 4000);
 
 
 
