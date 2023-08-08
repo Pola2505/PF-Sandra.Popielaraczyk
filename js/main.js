@@ -198,6 +198,8 @@ function agregarAlCarrito(e) {
 }
 
 
+setTimeout(() => { document.title = "-> Subscribite a nuestro newsletter y conoce todas las ofertas!"; }, 3000);
+setTimeout(() => { document.title = '♥ La vida saludable, recetas que enamoran y dietas personalizadas! ♥'; }, 7000);
 
 
 
