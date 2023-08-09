@@ -14,12 +14,15 @@ const imprimirNutricionistas = () => {
             nutricionistas.forEach((nutricionista) => {
 
                 let listItem = document.createElement('li');
+                listItem.classList.add("list-item");
                 listItem.innerHTML = `
                     
                         <img class="nutri-imagen" src="${nutricionista.avatar}"/>
+                        <div class="nutri-detalles">
                         <h2 class="nutri-name">${nutricionista.first_name} ${nutricionista.last_name}</h2>
                         <span class="nutri-email">${nutricionista.email}</span>
-                   
+                        </div>
+                        
                 `;
                 lista.append(listItem);
             });

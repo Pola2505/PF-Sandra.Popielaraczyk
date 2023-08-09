@@ -305,3 +305,25 @@ p{
     padding:20px;
     margin:10px;
   }
+  .lista-nutricionistas{
+    padding:0;
+  }
+  .list-item{
+    
+    display:flex;
+    flex-direction: row;
+    margin: 20px;
+  }
+  .nutri-imagen{
+    border-radius: 10px;
+    margin: 10px;
+  }
+ .nutri-detalles{
+    padding:20px;
+    margin:10px;
+ }
+ @media screen and (max-width: 600px) {
+    .nutri-detalles{
+      font-size: 10px;
+    }
+  }
