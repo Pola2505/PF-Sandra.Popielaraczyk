@@ -131,6 +131,16 @@ p{
     padding: 5px;
     border-radius: 15px;
 }
+@media (orientation:portrait) and (max-width: 740px){
+    .contenedor-carrito{
+        font-size: 10px;
+        
+    }
+    .producto-titulo{
+        font-size:13px;
+    }
+}
+
 .contenedor-carrito{
     display: flex;
     flex-direction:column;
@@ -165,7 +175,7 @@ p{
 .carrito-producto-imagen{
     width: 100px;
     border-radius: 10px;
-    margin-left: 100px;
+    margin-left: 20px;
 }
 
 .carrito-producto-eliminar{
