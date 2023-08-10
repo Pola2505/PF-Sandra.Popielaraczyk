@@ -1,5 +1,7 @@
 // El uso de API externa y fetch
 
+// Aca creamos una lista de nutricionistas con cuales el usuario se puede comunicar y si no se carga sale el mensaje en la pantalla
+
 const imprimirNutricionistas = () => {
 
     fetch('https://reqres.in/api/users?page=1')

@@ -1,6 +1,10 @@
+//Llamamos los elementos de HTML
+
 const sweetAlert = document.querySelector("#sweetAlert");
 const contenedorFormulario = document.querySelector("#contenedor-form");
 const mandarForm = document.querySelector("#mandar-form");
+
+// Si queremos mandar el form, desaparece el formulario de consulta y sale un mensaje y si lo rechazamos vuelve al formulario
 
 sweetAlert.addEventListener("click", mandarFormulario);
 
