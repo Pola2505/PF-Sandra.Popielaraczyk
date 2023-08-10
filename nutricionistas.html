@@ -79,16 +79,20 @@
 
     <!--Header, logo, title-->
 
-    <div class="header finisher-header">
-      <h2 class="main-header">Conoce nuestra oferta - recetas ricas, saludable y dietas con nutricionistas personales!
-      </h2>
+    <div id="header-container">
+      <div  class="header finisher-header">
+        <h2 class="main-header">Conoce nuestra oferta - recetas ricas, saludable y dietas con nutricionistas personales!
+        </h2>
+      </div>
     </div>
-    <main>
 
-      <!--esto rellenamos con una API-->
+    <main>
+       
+      <!--esto rellenamos con una API y si nos da error sale un mensaje-->
         <ul id="lista-nutricionistas" class="lista-nutricionistas">
 
         </ul>
+        <p id="error-message" class="inactive">Lo siento! No tenemos nutricionistas disponibles en este momento...</p>
    
     </main>
   

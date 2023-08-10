@@ -306,7 +306,7 @@ p{
   .swal2-popup{
     border-radius: 20px !important;
   }
-  #parrafo-sweetalert{
+  #parrafo-sweetalert, #error-message{
     color: var(--quaternary-color);
     padding:20px;
     margin:10px;

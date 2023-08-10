@@ -1,14 +1,15 @@
+// El uso de API externa y fetch
+
 const imprimirNutricionistas = () => {
 
     fetch('https://reqres.in/api/users?page=1')
         .then((res) => res.json())
         .then((res) => {
 
-            console.log(res.data); //res = [array de nutricionistas]
-
             const nutricionistas = res.data;
 
-            //PINTAR ESTOS DATOS (res) EN EL HTML.
+            //Pintamos estos datos en HTML
+
             const lista = document.querySelector('#lista-nutricionistas');
 
             nutricionistas.forEach((nutricionista) => {
@@ -28,7 +29,11 @@ const imprimirNutricionistas = () => {
             });
 
         })
-        .catch((error) => console.log(error));
+        .catch(() => {
+            const errorMessage = document.querySelector("#error-message");
+            errorMessage.classList.remove("inactive");
+
+});
 
 };
 
