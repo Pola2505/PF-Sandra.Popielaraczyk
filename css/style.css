@@ -66,10 +66,7 @@ p{
     margin-bottom:0;
 }
 
-.container-nosotros, .container_nuevos_ebooks, .container-recetas-nuevas {
-   padding:10px 70px 10px 50px;
-   
-}
+
 .card{
     background-color: var(--secondary-color) !important;
     color: var(--quaternary-color);
@@ -85,9 +82,14 @@ p{
     grid-template-columns: repeat(6,1fr);
     gap: 20px;
     padding: 20px 50px 20px 50px;
-       
+           
 }
+@media (orientation:portrait) and (max-width: 740px){
+    .container-our-products{
+        grid-template-columns: repeat(2,1fr);
 
+    }
+}
 .producto-imagen {
     max-width: 100%;
     border-radius: 1rem;
@@ -204,10 +206,14 @@ p{
 .inactive{
     display:none;
 }
+.newsletter-enviar{
+    border: 0 !important;
+    background-color: var(--main-color)!important;
+    border-radius: 10px!important;
+}
 .btn{
     border: 0 !important;
     background-color: var(--main-color)!important;
-    padding: 5px, 15px, 5px, 15px!important;
     border-radius: 10px!important;
         
 }
@@ -327,3 +333,4 @@ p{
       font-size: 10px;
     }
   }
+ 
